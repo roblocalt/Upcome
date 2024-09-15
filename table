@@ -1,0 +1,134 @@
+getgenv().Upcome = {
+    Options = {
+        ['Key'] = "Your Whitelist Key.",
+        ['Intro'] = true, -- // Broken
+        ['Version'] = "Latest", -- // don’t touch.
+        ['Intro_Type'] = "Funny" -- //dont touch.
+    },
+    Silent = {
+        ['Enabled'] = true,
+        ['Key'] = "C",
+        ['Type'] = "Target", -- // Target, FOV
+        ['HitChance'] = 400, 
+        ['ThirdPerson'] = true,
+        ['FirstPerson'] = true,
+        ['Prediction'] = 0.129,
+        ['Ignore_Parts'] = false, -- // Wip
+        ['Ignore_Parts'] = {"Parts"},
+        ['HitPart'] = "HumanoidRootPart",
+        ['HitPart_Type'] = "Normal", -- // Normal
+        ['UseKeyBind'] = true,
+        ['Notifications'] = true,
+        ['AirShot_Function'] = true,
+	    ['Airshot_Part'] = "UpperTorso"
+    },
+    FOV = {
+      ['Silent'] = {
+           ['Visible'] = true,
+           ['Filled'] = false,
+           ['Sides'] = 100,
+           ['Size'] = 100.5,
+           ['Transparency'] = 1,
+           ['Thickness'] = 0.7,
+           ['Color'] = Color3.fromRGB(1, 1, 1),
+    },
+    Aimbot = {
+           ['UseFov'] = true,
+           ['Visible'] = false,
+           ['Filled'] = false,
+           ['Sides'] = 20,
+           ['Size'] = 100,
+           ['Transparency'] = 1,
+           ['Thickness'] = 1,
+           ['Color'] = Color3.fromRGB(0, 0, 0)
+           
+         },
+    },     
+    FOV_Types = {
+        ['Target'] = true,
+    },
+    Aimbot = { -- // Universal.
+        ['Enabled'] = true,
+        ['HitPart_Type'] = "Normal", -- // Normal
+        ['Key'] = "Q",
+        ['Prediction'] = 0.129,
+        ['HitPart'] = "Head",
+        ['Airshot_Function'] = false,
+        ['Airshot_HitPart'] = "LowerTorso",
+        ['Distance'] = 12,
+        ['Smoothing'] = true,
+        ['Smoothness'] = 0.012
+    },
+    Shake = { -- // Keep This On.
+      ['Shake'] = true,
+        ['Shake_X'] = 0, -- // X
+        ['Shake_Y'] = 0, -- // Y
+        ['Shake_Z'] = 0 -- // Z
+    },
+    Easing = { 
+        ['Style'] = "Put Ur Easing Style Here", -- // Easing Styles
+        ['Direction'] = "Put Ur Easing Direction Here", -- // Easing Directions
+    },    
+	MemSpoofer = { -- // Spoofs F9 Memory.
+		['Enabled'] = true,
+		['Most'] = 100,
+		['Least'] = 50
+	},
+    Checks = { -- Da Hood Checks.
+        Silent = {
+            ['Knocked'] = true, -- // 
+            ['Crew'] = true, -- // Checks IF Player Is In The Same Crew As You.
+            ['Wall'] = false, -- // Wall Check For Silent, Aim Assist.
+            ['Friend'] = true, -- // Checks The Tab Thing To See If Plr Is Your Friend.
+            ['Grabbed'] = true, -- // Checks If Player Is Grabbed.
+            ['Anti_Curve'] = true -- X, Y, Z Stuff + Uses Character NOT Mouse.
+        },
+        Aimbot = {
+            ['Wall'] = false, -- // Wall Check For Silent, Aim Assist.
+            ['Knocked'] = true, -- // 
+        
+        }
+    },
+    Cmds = {
+        ['Enabled'] = true,
+        ['FOV_Type'] = "Silent", -- // Silent, Aimbot
+        ['FOV_Size'] = "/f", -- // Fov Radius
+        ['Predict_Type'] = "Silent", -- // "Silent", "Aimbot"
+        ['Pred_Value'] = "!P",
+    },    
+	AntiGroundShots = {
+		['Enabled'] = true,-- // keep this on.
+		['Delay'] = 0.5
+	},
+    Resolver = { 
+        ['Anti_Aim_Viewer'] = true,
+        ['Enabled'] = true, -- // WIP
+        ['Type'] = "Recalculation" -- // Recalculation, Direction, Velocity
+    },
+	AutoPrediction = {
+     ['Enabled'] = false,
+        ['RefreshRate'] = 0.1,
+        ['Ping_10'] = 0.10,
+        ['Ping_20'] = 0.11,
+        ['Ping_30'] = 0.12,
+        ['Ping_40'] = 0.123,
+        ['Ping_50'] = 0.125,
+        ['Ping_60'] = 0.127,
+        ['Ping_70'] = 0.133,
+        ['Ping_80'] = 0.134,
+        ['Ping_90'] = 0.1365,
+        ['Ping_100'] = 0.1374,
+        ['Ping_110'] = 0.12,
+        ['Ping_120'] = 0.12,
+        ['Ping_130'] = 0.12,
+        ['Ping_140'] = 0.13,
+        ['Ping_150'] = 0.1405,
+    },
+   Text = {
+	   ['Enabled'] = true,
+	   ['Size'] = 12,
+	   ['Position'] = "bottomleft",
+
+         
+    },
+}
